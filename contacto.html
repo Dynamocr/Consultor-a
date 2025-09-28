@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Consultoría y Asesoría Legal | Rojas Daza & Asociados </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="icon" href="img/RDA.ico" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/style_materia.css" rel="stylesheet">
+    <style>
+        /* --- Estilos de sección de contacto --- */
+        .contacto-section {
+            background: #f8f9fa;
+            border-top: 4px solid #c8a165;
+            /* Dorado elegante */
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 0.8rem;
+            border-left: 5px solid #c8a165;
+            padding-left: 12px;
+        }
+
+        .section-subtitle {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form .form-control {
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            box-shadow: none;
+            transition: all 0.3s ease;
+            color: #000;
+            /* 🔥 Texto negro dentro del input */
+
+        }
+
+        .contact-form .form-control:focus {
+            border-color: #000000;
+            box-shadow: 0 0 0 0.2rem rgba(4, 57, 39, 0.15);
+        }
+
+        .btn-submit {
+            background: #000000;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.05rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .info-list li {
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .info-list i {
+            color: #c8a165;
+            margin-right: 8px;
+        }
+
+        .map-container {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            height: 300px;
+        }
+
+        #formMessage {
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            /* oculto por defecto */
+        }
+
+        #formMessage.success {
+            background-color: #e6f4ea;
+            /* verde claro */
+            border: 1px solid #1b5e20;
+            /* verde oscuro */
+            color: #1b5e20;
+        }
+
+        #formMessage.error {
+            background-color: #fdecea;
+            /* rojo claro */
+            border: 1px solid #c62828;
+            /* rojo oscuro */
+            color: #c62828;
+        }
+
+        #formMessage.loading {
+            background-color: #fff8e1;
+            /* amarillo suave */
+            border: 1px solid #f9a825;
+            color: #f57f17;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light border-bottom d-none d-lg-block">
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-12 text-end">
+                <small class="me-4"><i class="fa fa-phone-alt me-2 text-black"></i>+51 987 654 321</small>
+                <small class="me-4"><i class="fa fa-envelope me-2 text-black"></i>info@estudiolegal.com</small>
+                <a class="text-black me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-black me-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="text-black me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/RDA3 - sin fondo.png" alt="Logo" class="img-fluid" style="max-height: 60px;">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+
+                    <!-- Dropdown Áreas de Práctica -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Materias</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="familia.html" class="dropdown-item">Derecho de Familia</a>
+                            <a href="penal.html" class="dropdown-item">Derecho Penal</a>
+                            <a href="laboral.html" class="dropdown-item">Derecho Laboral</a>
+                            <a href="comercial.html" class="dropdown-item">Derecho Comercial</a>
+                            <a href="empresariales.html" class="dropdown-item">Servicios Empresariales</a>
+                            <a href="pas.html" class="dropdown-item">P.A.S.</a>
+                            <a href="tributario.html" class="dropdown-item">Derecho Tributario</a>
+                            <a href="civil.html" class="dropdown-item">Derecho Civil</a>
+                            <a href="transporte.html" class="dropdown-item">Derecho de Transporte y Tránsito</a>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown Servicios Empresariales -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios
+                            Corporativos</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="planes.html" class="dropdown-item">Planes</a>
+                            <a href="consultoria.html" class="dropdown-item">Consultoría</a>
+                        </div>
+                    </div>
+
+                    <a href="noticias.html" class="nav-item nav-link">Noticias</a>
+                    <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Contacto Start -->
+    <div class="container-fluid py-5 contacto-section">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Formulario -->
+                <div class="col-lg-6">
+                    <h2 class="section-title">Contáctenos</h2>
+                    <p class="section-subtitle">Gracias por visitarnos. Complete la información y seleccione el tema de
+                        su consulta. Nuestro equipo se comunicará con usted a la brevedad.</p>
+                    <form id="formContacto" class="contact-form" action="enviar.php" method="POST">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Nombres y Apellidos"
+                                required>
+                            <label for="name">Nombres y Apellidos</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" name="phone" placeholder="Teléfono">
+                            <label for="phone">Teléfono</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="message" placeholder="Mensaje" style="height: 130px"
+                                required></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                        <button class="btn-submit w-100 py-3" type="submit">Enviar</button>
+                    </form>
+                    <div id="formMessage" style="margin-top:10px; font-size:0.95rem;"></div>
+                </div>
+
+                <!-- Información -->
+                <div class="col-lg-6">
+                    <h2 class="section-title">Ubicación</h2>
+                    <p class="section-subtitle">Para cualquier consulta adicional, no dude en comunicarse con nosotros.
+                    </p>
+                    <ul class="list-unstyled info-list mb-4">
+                        <li><i class="fa fa-map-marker-alt"></i> 123 Calle – San Isidro</li>
+                        <li><i class="fa fa-clock"></i> Lunes a Viernes 9:00 am – 6:00 pm</li>
+                        <li><i class="fa fa-phone-alt"></i> +51 941 158 921</li>
+                        <li><i class="fa fa-envelope"></i> correoabogados@gmail.com</li>
+                    </ul>
+                    <div class="map-container">
+                        <iframe class="w-100 h-100 border-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.5322064324605!2d-77.07833885039945!3d-11.86798268387148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d13506fe0c21%3A0xf098dafeb94a250e!2sMunicipalidad%20De%20Puente%20Piedra!5e0!3m2!1ses-419!2spe!4v1758931778592!5m2!1ses-419!2spe"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contacto End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4">Contacto</h4>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, Lima, Perú</a>
+                        <a href="mailto:info@tusitio.com"><i class="fas fa-envelope me-2"></i>
+                            correoabogados@gmail.com</a>
+                        <a href="tel:+511234567890"><i class="fas fa-phone me-2"></i> +51 941 158 921</a>
+                    </div>
+                </div>
+
+                <!-- Horario -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4">Horario</h4>
+                        <p class="mb-0">Lunes - Viernes: 09:00 am - 07:00 pm</p>
+                        <p class="mb-0">Sábado: 10:00 am - 05:00 pm</p>
+                        <p class="mb-0">Domingo: Cerrado</p>
+                    </div>
+                </div>
+
+                <!-- Navegación -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4">Navegación</h4>
+                        <a href="index.html"><i class="fas fa-angle-right me-2"></i> Inicio</a>
+                        <a href="nosotros.html"><i class="fas fa-angle-right me-2"></i> Nosotros</a>
+                        <a href="noticias.html"><i class="fas fa-angle-right me-2"></i> Noticias</a>
+                        <a href="contacto.html"><i class="fas fa-angle-right me-2"></i> Contacto</a>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4">Legal</h4>
+                        <a href="terms.html"><i class="fas fa-angle-right me-2"></i> Términos y Condiciones</a>
+                        <a href="librodereclamaciones.html"><i class="fas fa-angle-right me-2"></i> Libro de
+                            Reclamaciones</a>
+                        <a href="privacy.html"><i class="fas fa-angle-right me-2"></i> Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-8 text-center text-md-start mb-md-0">
+                    <span class="text-white">
+                        <a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Consultoría y Asesoría Legal | Rojas Daza &
+                            Asociados</a>, Todos los derechos reservados.
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <!-- Redes Sociales -->
+                    <a class="btn btn-outline-light mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/51941158921?text=Buen%20d%C3%ADa%2C%20estoy%20interesado%20en%20conocer%20los%20servicios%20legales%20de%20Rojas%20Daza%20%26%20Asociados.%20%C2%BFPodr%C3%ADan%20brindarme%20informaci%C3%B3n%20y%20orientaci%C3%B3n%20sobre%20c%C3%B3mo%20iniciar%20mi%20consulta%3F"
+        target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="js/whatsaspp-versatil.js"></script>
+    <script src="js/materias-active.js"></script>
+    <script src="js/navbar-active.js"></script>
+    <script src="js/carrusel-staff.js"></script>
+    <script src="js/envio-contacto.js"></script>
+
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
